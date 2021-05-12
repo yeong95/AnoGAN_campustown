@@ -1,19 +1,19 @@
 from __future__ import print_function
-from keras.models import Sequential, Model
-from keras.layers import Input, Reshape, Dense, Dropout, MaxPooling2D, Conv2D, Flatten
-from keras.layers import Conv2DTranspose, LeakyReLU
-from keras.layers.core import Activation
-from keras.layers.normalization import BatchNormalization
-from keras.optimizers import Adam, RMSprop
-from keras import backend as K
-from keras import initializers
-import tensorflow as tf
+import tensorflow as tf 
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.layers import Input, Reshape, Dense, Dropout, MaxPooling2D, Conv2D, Flatten
+from tensorflow.keras.layers import Conv2DTranspose, LeakyReLU
+from tensorflow.keras.layers import Activation
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.optimizers import Adam, RMSprop
+from tensorflow.keras import backend as K
+from tensorflow.keras import initializers
 import numpy as np
 from tqdm import tqdm
 import cv2
 import math
 
-from keras.utils. generic_utils import Progbar
+from tensorflow.keras.utils import Progbar
 
 ### combine images for visualization
 def combine_images(generated_images):

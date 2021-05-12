@@ -1,17 +1,19 @@
 from __future__ import print_function
 
 import matplotlib
-matplotlib.use('Qt5Agg')
+# matplotlib.use('Qt5Agg')
 
 import os
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # warning 출력 제거하는 코드 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-from keras.datasets import mnist
+import tensorflow as tf
+from tensorflow.keras.datasets import mnist
 import argparse
 import anogan
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--img_idx', type=int, default=14)
